@@ -1,0 +1,18 @@
+﻿1. Number limitation.
+Max integer: 2^53, ie: 9007199254740992(0x20000000000000)
+Min integer: -2^53
+Number.MAX_VALUE: 1.7976931348623157e+308
+Number.MIN_VALUE: 5e-324
+
+float is not precise, for example: 0.1 + 0.2 => 0.30000000000000004
+
+2. All identity start from 1. If max integer reached in long term, start from -2^53 as next Id.
+
+3. Every table has a identity field with naming <tableName>Id.
+
+4. All teachers, students, and contact for students needs to be registered or imported as a user.
+
+5. Use LookupGroup and LookupGroupDetail to keep enumeration values, such as relation, gender, etc.
+
+6. Logging and auditing?
+

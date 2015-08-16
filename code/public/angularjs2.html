@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Hello Controllers in AngularJS</title>
+    <script src="libs/angularjs/1.4.3/angular.min.js"></script>
+
+</head>
+<body ng-controller="TodoController">
+
+    <ul>
+        <li ng-repeat="todo in todos">
+            <input type="checkbox" ng-model="todo.completed">
+            {{ todo.name }}
+        </li>
+    </ul>
+
+    <script>
+        angular.module("app", [])
+          .controller('TodoController', ['$scope', function ($scope) {
+              $scope.todos = [
+                { name: 'Master HTML/CSS/Javascript', completed: true },
+                { name: 'Learn AngularJS', completed: false },
+                { name: 'Build NodeJS backend', completed: false },
+                { name: 'Get started with ExpressJS', completed: false },
+                { name: 'Setup MongoDB database', completed: false },
+                { name: 'Be awesome!', completed: false },
+              ];
+          }]);
+    </script>
+</body>
+</html>
