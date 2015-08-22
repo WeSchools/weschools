@@ -6,6 +6,8 @@
 		<script src="./js/jquery-1.11.3.min.js"></script>
 		<script src="./bootstrap/bootstrap.min.js"></script>
 		<script src="./layer/layer.js"></script>	
+	</head>
+
 	<body>
 		<nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -22,7 +24,7 @@
           <ul class="dropdown-menu">
             <li><a href="./course.html">计算机基础</a></li>
 			<li role="separator" class="divider"></li>
-			<li><a href="#">数据库原理</a></li>
+			<li><a href="./course.html">数据库原理</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#" id="create-course">创建</a></li>
 			<li role="separator" class="divider"></li>
@@ -71,7 +73,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
 	<div class="sidebar-left">
 		<ul>
 			<li><a href="#">最近活动</a></li>
@@ -83,48 +84,38 @@
 	</div>
 	
 	<div class="main-container">
-		<div class="page-title">计算机基础</div>
-		<div class="page-banner" style="height:55px;">
-			<div style="float:left; padding-top:6px;">添加资源:</div>
-			<div style="float:left; margin-left:10px;margin-bottom:10px;">
-			<select class="form-control">
-				<option>添加文件夹</option>
-				<option>添加作业</option>
-				<option>添加测验</option>
-				<option>添加文件</option>
-				<option>添加讨论</option>
-				<option>添加网页</option>
-				<option>外部导入</option>
-				<option>查找资源</option>
-			</select>
-			</div>
-			<div style="clear:both;"></div>
+		<div class="page-title">考前答疑</div>
+		<div class="page-banner-b">
+			<textarea class="form-control" rows="3"></textarea>
+			<input class="btn btn-default" style="float:right;margin-top:10px;" type="submit" value="发布">
 		</div>
 		<div style="margin-top:10px;">
 			<div style="padding-top:10px; padding-bottom:10px; border-bottom:1px solid #ddd;">
-				<div class="sspic" style="float:left;"><img src="./imgs/folder.gif"/></div>
+				<div style="float:left;"><img src="./imgs/user-default.gif"/></div>
 				<div style="float:left;padding-left:10px;">
-					<div style="padding-top:5px; font-size:16px; font-weight:bold;"><span><a href="#">课件</a></span></div>
+					<div><span><a href="#">Felix</a></span></div>
+					<div style="padding-top:5px; font-size:10px;"><span>欢迎大家选修我的课</span></div>
+					<div style="padding-top:5px; font-size:8px;"><span style="font-color:#333;">2015-8-18</span>&nbsp;&nbsp;<span><a href="#">评论</a></span>&nbsp;&nbsp;<span><a href="#">Like</a></span></div>
 				</div>
 				<div style="clear:both;"></div>
 			</div>
-		</div>
-		
-		<div style="margin-top:10px;">
-			<div style="padding-top:10px; padding-bottom:10px; border-bottom:1px solid #ddd;">
-				<div class="sspic" style="float:left;"><img src="./imgs/file.png"/></div>
+			
+			<div style="margin-top:10px;  padding-bottom:10px; border-bottom:1px solid #ddd;">
+				<div style="float:left;"><img src="./imgs/user-default.gif"/></div>
 				<div style="float:left;padding-left:10px;">
-					<div style="padding-top:5px; font-size:16px;font-weight:bold;"><span><a href="#">课堂测验</a></span></div>
+					<div><span><a href="#">Felix</a></span></div>
+					<div style="padding-top:5px; font-size:10px;"><span>欢迎大家选修我的课</span></div>
+					<div style="padding-top:5px; font-size:8px;"><span style="font-color:#333;">2015-8-18</span>&nbsp;&nbsp;<span><a href="#">评论</a></span>&nbsp;&nbsp;<span><a href="#">Like</a></span></div>
 				</div>
 				<div style="clear:both;"></div>
 			</div>
-		</div>
-		
-				<div style="margin-top:10px;">
-			<div style="padding-top:10px; padding-bottom:10px; border-bottom:1px solid #ddd;">
-				<div class="sspic" style="float:left;"><img src="./imgs/homework.jpg"/></div>
+			
+			<div style="margin-top:10px; padding-bottom:10px;  border-bottom:1px solid #ddd;">
+				<div style="float:left;"><img src="./imgs/user-default.gif"/></div>
 				<div style="float:left;padding-left:10px;">
-					<div style="padding-top:5px; font-size:16px;font-weight:bold;"><span><a href="#">期中考试</a></span></div>
+					<div><span><a href="#">Felix</a></span></div>
+					<div style="padding-top:5px; font-size:10px;"><span>欢迎大家选修我的课</span></div>
+					<div style="padding-top:5px; font-size:8px;"><span style="font-color:#333;">2015-8-18</span>&nbsp;&nbsp;<span><a href="#">评论</a></span>&nbsp;&nbsp;<span><a href="#">Like</a></span></div>
 				</div>
 				<div style="clear:both;"></div>
 			</div>
@@ -140,8 +131,6 @@
 
 
 
-
-
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     <div class="navbar-header">
@@ -152,6 +141,7 @@
     </div>
   </div>
 </nav>
+
 
 <script>
 	$('#create-course').on('click', function(){

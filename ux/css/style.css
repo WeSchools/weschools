@@ -1,3 +1,5 @@
+
+
 .nav li:hover ul {
 	display: block;
 }
@@ -30,6 +32,33 @@
 
 .page-banner{
 	height:45px; 
+	border-bottom: 1px solid #ddd;
+	padding: 12px 0;
+}
+
+.img-update{
+	display: inline-block;
+	background: url(../imgs/icon-1.png) 0 -192px no-repeat;
+	height: 32px;
+	width: 24px
+}
+
+ .img-assignment{
+	display: inline-block;
+	background: url(../imgs/icon-1.png) 0 -96px no-repeat;
+	height: 32px;
+	width: 24px
+}
+
+.img-activity{
+	display: inline-block;
+	background: url(../imgs/icon-1.png) 0 -228px no-repeat;
+	height: 32px;
+	width: 24px
+}
+
+.page-banner-b{
+	height:145px; 
 	border-bottom: 1px solid #ddd;
 	padding: 12px 0;
 }
