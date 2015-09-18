@@ -1,0 +1,189 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="./bootstrap/bootstrap-theme.min.css">
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./bootstrap/bootstrap.min.js"></script>
+		<script src="./layer/layer.js"></script>	
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">XXX</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html">主页 <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./course.html">计算机基础</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="./course.html">数据库原理</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" id="create-course">创建</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#" id="join-course">加入</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">小组 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">考前答疑</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">C语言兴趣小组</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" id="create-group">创建</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#" id="join-group">加入</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">资源 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">私有</a></li>
+			<li role="separator" class="divider"></li>
+            <li><a href="#">公开</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">小组</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">APP</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">我的消息</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Felix <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="sidebar-left">
+		<ul>
+			<li><a href="#">最近活动</a></li>
+			<li><a href="#">我的日历</a></li>
+			<li><a href="#">我的消息</a></li>
+			<li><a href="#">选择学校</a></li>
+			<li><a href="#">邀请同事</a></li>
+		</ul>
+	</div>
+	
+	<div class="main-container">
+		<div class="page-title">考前答疑</div>
+		<div class="page-banner-b">
+			<textarea class="form-control" rows="3"></textarea>
+			<input class="btn btn-default" style="float:right;margin-top:10px;" type="submit" value="发布">
+		</div>
+		<div style="margin-top:10px;">
+			<div style="padding-top:10px; padding-bottom:10px; border-bottom:1px solid #ddd;">
+				<div style="float:left;"><img src="./imgs/user-default.gif"/></div>
+				<div style="float:left;padding-left:10px;">
+					<div><span><a href="#">Felix</a></span></div>
+					<div style="padding-top:5px; font-size:10px;"><span>欢迎大家选修我的课</span></div>
+					<div style="padding-top:5px; font-size:8px;"><span style="font-color:#333;">2015-8-18</span>&nbsp;&nbsp;<span><a href="#">评论</a></span>&nbsp;&nbsp;<span><a href="#">Like</a></span></div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div style="margin-top:10px;  padding-bottom:10px; border-bottom:1px solid #ddd;">
+				<div style="float:left;"><img src="./imgs/user-default.gif"/></div>
+				<div style="float:left;padding-left:10px;">
+					<div><span><a href="#">Felix</a></span></div>
+					<div style="padding-top:5px; font-size:10px;"><span>欢迎大家选修我的课</span></div>
+					<div style="padding-top:5px; font-size:8px;"><span style="font-color:#333;">2015-8-18</span>&nbsp;&nbsp;<span><a href="#">评论</a></span>&nbsp;&nbsp;<span><a href="#">Like</a></span></div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div style="margin-top:10px; padding-bottom:10px;  border-bottom:1px solid #ddd;">
+				<div style="float:left;"><img src="./imgs/user-default.gif"/></div>
+				<div style="float:left;padding-left:10px;">
+					<div><span><a href="#">Felix</a></span></div>
+					<div style="padding-top:5px; font-size:10px;"><span>欢迎大家选修我的课</span></div>
+					<div style="padding-top:5px; font-size:8px;"><span style="font-color:#333;">2015-8-18</span>&nbsp;&nbsp;<span><a href="#">评论</a></span>&nbsp;&nbsp;<span><a href="#">Like</a></span></div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class ="sidebar-right">
+		<div class="page-title">Upcoming Events</div>
+	</div>
+	
+	<div style="clear:both;"></div>
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">关于我们</a>
+    </div>
+	   <div class="navbar-header">
+      <a class="navbar-brand" href="#">帮助</a>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+	$('#create-course').on('click', function(){
+    layer.open({
+        type: 1,
+        area: ['600px', '380px'],
+        shadeClose: true, //点击遮罩关闭
+		title:'创建课程',
+        content: '\<div style="padding:30px 70px 0 70px;">\<div class="input-group">\<span class="input-group-addon">课程名称：\<\/span>\<input type="text" class="form-control">\<\/div>\<div class="input-group" style="margin-top:30px;">\<span class="input-group-addon">章节名称：\<\/span>\<input type="text" class="form-control">\<\/div>\<div class="input-group" style="margin-top:30px;">\<span class="input-group-addon">课程分类：\<\/span>\<select class="form-control">\<option>语言类\<\/option>\<option>数学类\<\/option>\<option>自然科学\<\/option>\<\/select>\<\/div>\<div class="input-group" style="margin-top:30px;">\<span class="input-group-addon">课程级别：\<\/span>\<select class="form-control">\<option>小学\<\/option>\<option>初中\<\/option>\<option>高中\<\/option>\<option>大学\<\/option>\<\/select>\<\/div>\<div style="margin-top:30px; margin-left:170px;">\<span>\<button type="button" class="btn btn-default">创建\<\/button>\<\/span>\<span style="margin-left:50px;">\<button type="button" class="btn btn-default">取消\<\/button>\<\/span>\<\/div>\<\/div>'
+    });
+	});
+	
+	$('#join-course').on('click', function(){
+    layer.open({
+        type: 1,
+        area: ['380px', '200px'],
+        shadeClose: true, //点击遮罩关闭
+		title:'加入课程',
+        content:'\<div style="padding:30px;30px;">\<div class="input-group">\<span class="input-group-addon">邀请码：\<\/span>\<input type="text" class="form-control">\<\/div>\<div style="margin-top:30px; margin-left:120px;">\<button type="button" class="btn btn-default">创建\<\/button>\<\/div>\<\/div>'
+	});
+	});
+	
+	$('#create-group').on('click', function(){
+    layer.open({
+        type: 1,
+        area: ['600px', '380px'],
+        shadeClose: true, //点击遮罩关闭
+		title:'创建小组',
+        content: '\<div style="padding:30px 70px 0 70px;">\<div class="input-group">\<span class="input-group-addon">小组名称：\<\/span>\<input type="text" class="form-control">\<\/div>\<div class="input-group" style="margin-top:30px;">\<span class="input-group-addon">小组描述：\<\/span>\<input type="text" class="form-control">\<\/div>\<div class="input-group" style="margin-top:30px;">\<span class="input-group-addon">可见范围：\<\/span>\<select class="form-control">\<option>学校\<\/option>\<option>群组\<\/option>\<option>自己\<\/option>\<\/select>\<\/div>\<div class="input-group" style="margin-top:30px;">\<span class="input-group-addon">访问方式：\<\/span>\<select class="form-control">\<option>接受邀请\<\/option>\<option>发出请求\<\/option>\<option>完全开放\<\/option>\<\/select>\<\/div>\<div style="margin-top:30px; margin-left:170px;">\<span>\<button type="button" class="btn btn-default">创建\<\/button>\<\/span>\<span style="margin-left:50px;">\<button type="button" class="btn btn-default">取消\<\/button>\<\/span>\<\/div>\<\/div>'
+    });
+	});
+	
+	$('#join-group').on('click', function(){
+    layer.open({
+        type: 1,
+        area: ['380px', '200px'],
+        shadeClose: true, //点击遮罩关闭
+		title:'加入小组',
+        content:'\<div style="padding:30px;30px;">\<div class="input-group">\<span class="input-group-addon">邀请码：\<\/span>\<input type="text" class="form-control">\<\/div>\<div style="margin-top:30px; margin-left:120px;">\<button type="button" class="btn btn-default">创建\<\/button>\<\/div>\<\/div>'
+	});
+	});
+</script>
+
+	</body>
+</html>

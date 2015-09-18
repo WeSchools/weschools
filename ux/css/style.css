@@ -1,0 +1,75 @@
+
+
+.nav li:hover ul {
+	display: block;
+}
+
+.sidebar-left{
+	float:left; 
+	width:15%;
+	border-right:1px #ddd solid;
+}
+
+.sidebar-left ul{
+	list-style-type: none;
+}
+
+.sidebar-left ul li{
+	height:45px;
+}
+
+.main-container{
+	width:60%; 
+	float:left;
+	padding: 0 20px;
+	border-right:1px #ddd solid;
+}
+
+.page-title{
+	font-size:25px; 
+	border-bottom: 1px solid #ddd;
+}
+
+.page-banner{
+	height:45px; 
+	border-bottom: 1px solid #ddd;
+	padding: 12px 0;
+}
+
+.img-update{
+	display: inline-block;
+	background: url(../imgs/icon-1.png) 0 -192px no-repeat;
+	height: 32px;
+	width: 24px
+}
+
+ .img-assignment{
+	display: inline-block;
+	background: url(../imgs/icon-1.png) 0 -96px no-repeat;
+	height: 32px;
+	width: 24px
+}
+
+.img-activity{
+	display: inline-block;
+	background: url(../imgs/icon-1.png) 0 -228px no-repeat;
+	height: 32px;
+	width: 24px
+}
+
+.page-banner-b{
+	height:145px; 
+	border-bottom: 1px solid #ddd;
+	padding: 12px 0;
+}
+
+.sidebar-right{
+	float:left; 
+	padding-left:30px;
+}
+
+.sspic img{
+	max-height:45px;
+	max-width:45px;
+	overflow:hidden;
+}
